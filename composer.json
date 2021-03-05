@@ -1,0 +1,39 @@
+{
+  "name": "different-technology/ses-mailer",
+  "type": "typo3-cms-extension",
+  "description": "Send emails with Amazon Simple Email Service (AWS SES)",
+  "support": {
+    "source": "https://github.com/different-technology/ses_mailer",
+    "issues": "https://github.com/different-technology/ses_mailer/issues",
+    "docs": "https://github.com/different-technology/ses_mailer"
+  },
+  "authors": [
+    {
+      "name": "Markus Hölzle",
+      "role": "Developer",
+      "email": "typo3@markus-hoelzle.de",
+      "homepage": "https://different.technology/"
+    }
+  ],
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=7.2",
+    "typo3/cms-core": "^10.4.10",
+    "symfony/amazon-mailer": "*",
+    "async-aws/ses": "^1.0"
+  },
+  "replace": {
+    "typo3-ter/ses_mailer": "self.version",
+    "typo3-ter/ses-mailer": "self.version"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "ses_mailer",
+      "web-dir": ".Build/Web"
+    }
+  }
+}

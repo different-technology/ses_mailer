@@ -1,0 +1,14 @@
+# cat=Basic; type=boolean; label=Activate SES
+enabled = 0
+
+# cat=Basic; type=string; label=AWS Region
+region =
+
+# cat=Basic; type=string; label=Access Key
+accessKey =
+
+# cat=Basic; type=string; label=Secret
+secret =
+
+# cat=Basic; type=options[ses+api, ses+https, ses+smtp]; label=Method
+method = ses+api
