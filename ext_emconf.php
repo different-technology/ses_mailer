@@ -5,17 +5,17 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'Amazon Simple Email Service (AWS SES)',
     'description' => 'Send emails with AWS SES.',
     'category' => 'services',
-    'version' => '1.0.0',
+    'version' => '1.1.0',
     'state' => 'stable',
     'author' => 'Markus Hölzle',
     'author_email' => 'typo3@markus-hoelzle.de',
     'author_company' => 'different.technology',
-    'clearCacheOnLoad' => false,
+    'clearCacheOnLoad' => true,
     'constraints' =>
         [
             'depends' =>
                 [
-                    'typo3' => '10.4.0-10.4.99',
+                    'typo3' => '11.5.0-11.5.99',
                 ],
             'conflicts' => [],
             'suggests' => [],
